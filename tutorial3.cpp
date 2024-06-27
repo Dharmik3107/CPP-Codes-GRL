@@ -20,7 +20,7 @@ int main()
     bool e = !d;
 
     cout << andOp << " " << orOp << " " << e << endl;
-    // cout << orOp << endl;
+    cout << orOp << endl;
 
     return 0;
 }
