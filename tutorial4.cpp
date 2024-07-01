@@ -37,7 +37,7 @@ int main()
     -= (Subtract and assign)
     *= (Multiply and assign)
     /= (Divide and assign)
-    %= (Modulus and assign)
+    %= (Modulus and assign)þ
     &= (Bitwise AND and assign)
     |= (Bitwise OR and assign)
     ^= (Bitwise XOR and assign)
@@ -57,7 +57,12 @@ int main()
     z <<= 2; // z = z << 2;
     z >>= 1; // z = z >> 2;
 
-    cout << z << endl;
+    //! Increment and Decrement Operator => Loops
+    // ++i, i++, i--, --i
+    int g = 50;
+    int h = g--;
+
+    cout << g << " " << h << endl;
 
     return 0;
 }
