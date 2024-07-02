@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std; // C++ Library
 
 int main()
@@ -20,9 +21,9 @@ int main()
     cout << d << " - D" << endl;
 
     int e = 7;
-    int f = (double)e; // Explicit Type casting
+    float f = float(e); // Explicit Type casting
     cout << e << " - E" << endl;
-    cout << f << " - F" << endl;
+    cout << fixed << setprecision(2) << f << " - F" << endl;
 
     //! Checking Type of Variable
     int g = 70;
