@@ -6,6 +6,10 @@ int main()
     // Declare Variable
     //  int a;
     // Initialize Variable
+    //! Comma Operator
+    // int a, int b, int c, int d;
+    // a = 20, b = 30, c = 40, d = 50;
+
     int z = 10;
     // int b = 9;
     //! Bitwise Operators
@@ -57,12 +61,22 @@ int main()
     z <<= 2; // z = z << 2;
     z >>= 1; // z = z >> 2;
 
+    int y = 40; // 10100
+    y &= 20;    // 01010 => y = y & 20 //00000
+    y |= 10;    // y = y | 10; 0000 | 1010 //1010
     //! Increment and Decrement Operator => Loops
     // ++i, i++, i--, --i
     int g = 50;
     int h = g--;
+    //! Conditional Operator
 
-    cout << g << " " << h << endl;
+    int f = 5;
+    int j = 7;
 
+    int i = 6 > 8 ? f - j : j - f;
+
+    cout << i << endl;
+    int yt, uy, op;
+    yt = 20, uy = 40, op = 32;
     return 0;
 }
