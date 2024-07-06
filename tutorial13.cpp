@@ -16,17 +16,19 @@ int main()
     for (int i = 1; i <= num; i++)
     {
         termSum = 0;
-        aux = "("; //(
+        aux = "["; //(
         for (int j = 1; j <= i; j++)
         {
-            termSum += j;
-            aux += to_string(j); // (1+2
+            termSum += j * j;
+            aux += "(";
+            aux += to_string(j) + "*" + to_string(j);
+            aux += ")"; // (1+2
             if (j < i)
             {
                 aux += "+"; //(1+
             }
         }
-        aux += ")"; // (1+2)
+        aux += "]"; // (1+2)
         if (i < num)
         {
             aux += "+"; //(1+2)+
@@ -38,3 +40,5 @@ int main()
     cout << sum << endl;
     return 0;
 }
+
+//(1*1) + (1*1 + 2*2) + (1*1 + 2*2 + 3*3) + ....
