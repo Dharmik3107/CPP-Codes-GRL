@@ -5,6 +5,10 @@
     "iostream": "cpp",
     "iomanip": "cpp",
     "xstring": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "iterator": "cpp",
+    "memory": "cpp",
+    "xmemory": "cpp",
+    "xutility": "cpp"
   }
 }
