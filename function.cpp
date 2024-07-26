@@ -9,9 +9,35 @@ funcType funcName(arguments //variables without value ){
 }
 */
 
-float plusNumber(int a, float b)
+// float plusNumber(int a, float b)
+// {
+//     float sum = a + b;
+//     return sum;
+// }
+
+//! Function with if Else
+bool conditionalFunction(int a, int b)
 {
-    float sum = a + b;
+    int sum = a - b;
+
+    if (sum > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+//! Function with Loops
+int calculateSum(int num)
+{
+    int sum = 0;
+    for (int x = 0; x <= num; x++)
+    {
+        sum += x;
+    }
     return sum;
 }
 
@@ -25,7 +51,7 @@ float plusNumber(int a, float b)
 
 int main()
 {
-    float ans = plusNumber(5, 6.7);
+    float ans = calculateSum(10);
     cout << ans << endl;
     return 0;
 }
