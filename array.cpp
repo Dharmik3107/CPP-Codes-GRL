@@ -48,7 +48,7 @@ int main()
     const int listSize = 10;
     char myList[listSize] = {};
 
-    for (int x = 0; x < size; x++)
+    for (int x = 0; x < listSize; x++)
     {
         cout << "Enter " << x << " Number:";
         cin >> myList[x];

@@ -54,6 +54,18 @@ int main()
     name.replace(5, 1, "");
     cout << name << endl;
 
+    //* Erase String
+    name.erase(2, 2);
+    cout << name << endl;
+    // name.clear();
+    cout << "Clear: " << name << endl;
+
+    //* Find index
+    name.append(" kohli");
+    // cout << name.find("k") << endl;
+    size_t pos = name.find("k");
+    cout << pos << endl;
+    cout << name.rfind("y") << endl;
     return 0;
 }
 
